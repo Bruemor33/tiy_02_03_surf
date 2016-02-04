@@ -4,9 +4,9 @@ MAIN ELEMENTS
 
 
 
-* {
+/** {
   max-width: 100%;
-}
+}*/
 
 body {
   color: #fff;
@@ -16,19 +16,20 @@ body {
   padding: 0;
 }
 
+/* Overlay selector is here for the transparent overlay of the background image. */
+
+.overlay {
+  display: inline-block;
+  height: 523px;
+  width: 1300px;
+  background-color: rgba(24, 116, 205, 0.75);
+}
+
 header {
   height: 523px;
-  width: 1299px;
-  background:
-    linear-gradient(
-      rgba(24, 116, 205, 0.75),
-      rgba(24, 116, 205, 0.75)
-    ),
-
-
-  url(images/the_last_wish.png) no-repeat;
+  width: 1300px;
+  background: url(images/the_last_wish.png) no-repeat;
   background-size: cover;
-
 }
 
 ul {
@@ -40,16 +41,118 @@ ul {
 HEADING ELEMENTS
 ********************************************/
 
+nav {
+  display: inline-block;
+  width: 1300px;
+  position: relative;
+}
 
 
 
-/*header::after{
-  clear:both;
-}*/
+
+/*******************************************
+LEFT HEADER ITEMS
+********************************************/
+
+
+.blog::before {
+  content: url(images/logo.png);
+  float: left;
+  margin-right: 5px;
+  display: inline-block;
+  position: relative;
+  right: 3px;
+  top: 1px;
+}
+
+.blog {
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-transform: uppercase;
+  float: left;
+  width: 260px;
+  margin-top: 8px;
+  margin-left: 140px;
+  color: #073551;
+  display: inline-block;
+  position: relative;
+  bottom: 4px;
+  letter-spacing: -.5px;
+}
+
+.blog::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+
+/********************
+RIGHT HEADER ITEMS
+********************/
+
+.links{
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  float: right;
+  margin-right: 143px;
+}
+
+.links::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links li {
+  font-family: "Oswald";
+  font-size: 18px;
+  color: #073551;
+  position: relative;
+  top: 1px;
+}
+
+.se {
+  display: inline;
+  /*margin-right: 4px;*/
+}
+
+.se::after {
+  content: url(images/search.png);
+  display: inline-block;
+  float: right;
+  /*line-height: 95%;*/
+  margin-top: 3px;
+  margin-right: 20px;
+  position: relative;
+  bottom: 3px;
+  left: 1px;
+}
+
+.ab {
+  margin-right: 10px;
+  display: inline;
+}
+
+
+/********************
+TITLE ELEMENTS
+********************/
+
+
 
 .title {
+  width: 1300px;
   display: inline-block;
-  width: 100%;
+  position: absolute;
+  top: 141px;
   /*width: 905px;*/
   /*height: 100%;
   clear: both;*/
@@ -57,100 +160,173 @@ HEADING ELEMENTS
 
 .title h1 {
   text-transform: uppercase;
-  text-align: center;
   font-family: "Open Sans";
   font-weight: 300;
-  font-size: 87px;
-  margin-top: 140px;
-  /*margin-left: 198px;*/
+  font-size: 105px;
+  /*margin-top: 225px;*/
+  margin-left: 198px;
   margin-bottom: 0;
   line-height: 95%;
-  clear: left;
+  letter-spacing: -4.5px;
+  display: inline-block;
+  position: relative;
+  right: 4px;
 }
 
 .title p {
   font-family: "Open Sans";
-  font-size: 12px;
-  text-align: center;
-  margin-top: 0;
+  font-size: 15px;
+  margin-left: 497px;
   color: #073551;
+  display: inline-block;
+  position: relative;
+  bottom: 13.5px;
+  letter-spacing: 1px;
 }
 
-.blog::before {
-  content: url(images/logo.png);
-  float: left;
+/********************************************
+BODY ELEMENTS
+********************************************/
+
+main {
+  width: 1300px;
 }
-
-.blog {
-  font-family: "Open Sans";
-  font-size: 16px;
-  /*display: inline-block;*/
-  float: left;
-  width: 250px;
-  margin-top: 10px;
-  margin-left: 168px;
-  color: #073551;
-
-}
-
-
-
-.nav{
-  float: right;
-  margin-right: 168px;
-}
-
-.nav ul {
-  list-style: none;
-}
-
-.nav li {
-  font-family: "Oswald";
-  font-size: 20px;
-  color: #073551;
-}
-
-.se {
-  display: inline;
-  margin-right: 4px;
-}
-
-.se::after {
-  content: url(images/search.png);
-  /*display: inline;*/
-  float: right;
-  /*line-height: 95%;*/
-  margin-top: 3px;
-  margin-right: 20px;
-}
-
-.ab {
-  margin-right: 10px;
-  display: inline;
-}
-
-/*.nav p::after {
-  margin-right: 30px;
-}*/
-
-/*.se {
-  display: inline;
-  margin-right: 40px;
-}
-
-.icon > p::after {
-  content: url(images/search.png);
-  /*float: right;*/
-/*}
-
-
-.ab {
-  display: inline;
-  margin-right: 10px;
-}*/
-
 
 
 /********************************************
 BODY ELEMENTS
 ********************************************/
+
+.left-content {
+  width: 615px;
+  height: 869px;
+  margin-left: 165px;
+  display: inline-block;
+  position: relative;
+}
+
+.left-content > p {
+  font-family: "Open Sans";
+}
+
+
+/********************************************
+BODY HEADING
+********************************************/
+
+
+
+
+.left-heading {
+  font-family: "Oswald";
+  color: #063354;
+}
+
+
+/********************************************
+LEFT BODY
+********************************************/
+
+
+
+.left-body {
+  color: #5D686F;
+}
+
+.body-content {
+  color: #5D686F;
+}
+
+.second-p {
+  color: #5D686F;
+}
+
+/********************************************
+LEFT BREAK
+********************************************/
+
+
+.left-break {
+  font-family: "Open Sans";
+  color: #026BB5;
+}
+
+
+/********************************************
+RIGHT BODY ELEMENTS
+********************************************/
+
+
+
+.right-content {
+  float: right;
+  height: 748px;
+  width: 278px;
+  margin-right: 162px;
+  display: inline-block;
+  position: relative;
+}
+
+.right-content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+/********************************************
+HEADSHOT
+********************************************/
+
+
+.photo {
+  width: 84px;
+  height: 84px;
+  margin-top: 83px;
+  margin-left: 98px;
+  margin-right: 98px;
+
+}
+
+.photo > img {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 84px;
+  height: 84px;
+}
+
+
+/********************************************
+HEADSHOT CAPTION
+********************************************/
+
+/*300px*/
+
+.cap-name {
+  color: #026BB5;
+}
+
+.sc-links {
+  text-decoration: none;
+  list-style: none;
+  color: #026BB5;
+}
+
+.tw {
+  text-decoration: none;
+}
+
+
+
+/********************************************
+ADD PIC
+********************************************/
+
+
+.add-pic > img {
+  display: inline-block;
+  position: absolute;
+  width: 278px;
+  height: 300px;
+}
