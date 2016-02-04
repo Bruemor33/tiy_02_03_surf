@@ -1,0 +1,156 @@
+/********************************************
+MAIN ELEMENTS
+********************************************/
+
+
+
+* {
+  max-width: 100%;
+}
+
+body {
+  color: #fff;
+  height: 2104px;
+  width: 1299px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 523px;
+  width: 1299px;
+  background:
+    linear-gradient(
+      rgba(24, 116, 205, 0.75),
+      rgba(24, 116, 205, 0.75)
+    ),
+
+
+  url(images/the_last_wish.png) no-repeat;
+  background-size: cover;
+
+}
+
+ul {
+  padding: 0;
+}
+
+
+/********************************************
+HEADING ELEMENTS
+********************************************/
+
+
+
+
+/*header::after{
+  clear:both;
+}*/
+
+.title {
+  display: inline-block;
+  width: 100%;
+  /*width: 905px;*/
+  /*height: 100%;
+  clear: both;*/
+}
+
+.title h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 87px;
+  margin-top: 140px;
+  /*margin-left: 198px;*/
+  margin-bottom: 0;
+  line-height: 95%;
+  clear: left;
+}
+
+.title p {
+  font-family: "Open Sans";
+  font-size: 12px;
+  text-align: center;
+  margin-top: 0;
+  color: #073551;
+}
+
+.blog::before {
+  content: url(images/logo.png);
+  float: left;
+}
+
+.blog {
+  font-family: "Open Sans";
+  font-size: 16px;
+  /*display: inline-block;*/
+  float: left;
+  width: 250px;
+  margin-top: 10px;
+  margin-left: 168px;
+  color: #073551;
+
+}
+
+
+
+.nav{
+  float: right;
+  margin-right: 168px;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav li {
+  font-family: "Oswald";
+  font-size: 20px;
+  color: #073551;
+}
+
+.se {
+  display: inline;
+  margin-right: 4px;
+}
+
+.se::after {
+  content: url(images/search.png);
+  /*display: inline;*/
+  float: right;
+  /*line-height: 95%;*/
+  margin-top: 3px;
+  margin-right: 20px;
+}
+
+.ab {
+  margin-right: 10px;
+  display: inline;
+}
+
+/*.nav p::after {
+  margin-right: 30px;
+}*/
+
+/*.se {
+  display: inline;
+  margin-right: 40px;
+}
+
+.icon > p::after {
+  content: url(images/search.png);
+  /*float: right;*/
+/*}
+
+
+.ab {
+  display: inline;
+  margin-right: 10px;
+}*/
+
+
+
+/********************************************
+BODY ELEMENTS
+********************************************/
