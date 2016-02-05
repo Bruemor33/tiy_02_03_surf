@@ -36,6 +36,14 @@ ul {
   padding: 0;
 }
 
+li {
+  display: inline-block;
+}
+
+p {
+  margin: 0;
+}
+
 
 /********************************************
 HEADING ELEMENTS
@@ -198,7 +206,7 @@ BODY ELEMENTS
 ********************************************/
 
 .left-content {
-  width: 615px;
+  width: 614px;
   height: 869px;
   margin-left: 165px;
   display: inline-block;
@@ -216,10 +224,42 @@ BODY HEADING
 
 
 
-
 .left-heading {
   font-family: "Oswald";
+  font-size: 63px;
+  font-weight: 400;
   color: #063354;
+  margin-top: 62.5px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+
+#left-links {
+  display: inline-block;
+  font-family: "Open Sans";
+  text-transform: capitalize;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+#left-links p {
+  color: #9DAFBC;
+  width: 16px;
+  margin-left: 15px;
+  text-transform: lowercase;
+  display: inline-block;
+}
+
+.heading-link {
+  color: #026BB5;
+  display: inline-block;
+}
+
+.date-link {
+  color: #9DAFBC;
+  display: inline-block;
+  text-decoration: underline;
 }
 
 
@@ -227,17 +267,27 @@ BODY HEADING
 LEFT BODY
 ********************************************/
 
+#left-body {
+  margin-top: 35px;
+  font-family: "Open Sans";
+  line-height: 26px;
+}
 
-
-.left-body {
+.left-body1 {
   color: #5D686F;
 }
 
-.body-content {
+.left-body2 {
+  color: #5D686F;
+  margin-top: 26px;
+  margin-bottom: 25px;
+}
+
+.left-body3 {
   color: #5D686F;
 }
 
-.second-p {
+.left-body4 {
   color: #5D686F;
 }
 
@@ -261,8 +311,9 @@ RIGHT BODY ELEMENTS
 .right-content {
   float: right;
   height: 748px;
-  width: 278px;
-  margin-right: 162px;
+  max-width: 282px;
+  margin-right: 160px;
+  margin-left: 0;
   display: inline-block;
   position: relative;
 }
@@ -280,20 +331,27 @@ HEADSHOT
 ********************************************/
 
 
-.photo {
+/*.photo {
   width: 84px;
   height: 84px;
   margin-top: 83px;
   margin-left: 98px;
   margin-right: 98px;
 
-}
+}*/
 
 .photo > img {
   border: 1px solid #ccc;
   border-radius: 50px;
   width: 84px;
   height: 84px;
+  margin-top: 83px;
+  margin-left: 98px;
+  margin-right: 98px;
+  display: inline-block;
+  position: relative;
+  left: 2px;
+  bottom: 1px;
 }
 
 
@@ -305,16 +363,79 @@ HEADSHOT CAPTION
 
 .cap-name {
   color: #026BB5;
+  width: 105px;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  display: inline-block;
+  position: relative;
+  left: 3px;
+  bottom: 16px;
+  /*letter-spacing: -1px;*/
+  margin-left: 93px;
+  margin-right: 91px;
+  margin-bottom: 0;
+  padding: 0;
 }
 
-.sc-links {
+ul, li, a {
+  text-decoration: none;
+}
+
+/*.sc-links > ul > a{
+  display: inline-block;
   text-decoration: none;
   list-style: none;
   color: #026BB5;
+}*/
+
+.sc-links {
+  width: 278px;
+  margin: 0;
+  margin-bottom: 15px;
+  margin-left: 46px;
+  display: inline-block;
+  position: relative;
+  bottom: 16px;
 }
 
-.tw {
-  text-decoration: none;
+.sc-links li {
+  text-transform: capitalize;
+  padding-right: 8px;
+  padding-left: 4px;
+  border-right: 1px solid #bebebe;
+}
+.sc-links li:last-child{
+  border-right: 0;
+}
+
+/*.sc-links li:not(last-child)*/
+
+.tw a {
+  color: #026bb5;
+  font-family: "Open Sans";
+  font-size: 13px;
+  display: inline-block;
+  position: relative;
+  right: 2px;
+}
+
+.fb a {
+  color: #026bb5;
+  font-family: "Open Sans";
+  font-size: 13px;
+  /*letter-spacing: -.5px;*/
+  display: inline-block;
+  position: relative;
+  right: 1px;
+}
+
+.insta a {
+  color: #026bb5;
+  font-family: "Open Sans";
+  font-size: 13px;
+  display: inline-block;
+  position: relative;
+  left: 1px;
 }
 
 
@@ -326,7 +447,58 @@ ADD PIC
 
 .add-pic > img {
   display: inline-block;
-  position: absolute;
+  position: relative;
+  left: 3px;
+  top: 21px;
+  /*right: 98px;*/
   width: 278px;
   height: 300px;
+}
+
+.add-cap a {
+  display: inline-block;
+  position: relative;
+  top: 23px;
+  margin-left: 190px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  text-decoration: underline;
+  text-transform: capitalize;
+  /*float: right;*/
+  color: #b2bfca;
+}
+
+/*.add-cap a::after {
+  content: "";
+  display: block;
+  clear: both;
+}*/
+
+
+
+/********************************************
+LEFT CONTENT TEXT
+********************************************/
+
+
+.sidebar-head {
+  color: #026BB5;
+  margin-top: 67px;
+  margin-left: 5px;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.sidebar-text {
+  color: #5D686F;
+  margin-left: 5px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 24.5px;
+  display: inline-block;
+  position: relative;
+  bottom: 25px;
+
 }
