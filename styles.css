@@ -197,7 +197,9 @@ BODY ELEMENTS
 ********************************************/
 
 main {
+  height: 1007px;
   width: 1300px;
+  border-bottom: 2px solid #E1E7EA;
 }
 
 
@@ -321,6 +323,67 @@ LEFT BREAK
   padding-left: 17px;
   padding-top: 13px;
 }
+
+
+
+
+/********************************************
+LEFT FOOTER ELEMENTS
+********************************************/
+
+
+
+.body-footer {
+  display: inline;
+}
+
+.body-footer a {
+  font-family: "Open Sans";
+}
+
+i {
+
+}
+
+.comments {
+  display: inline-block;
+  height: 30px;
+  width: 121px;
+  background-color: #0E6EB3;
+}
+
+.comments > a {
+  display: inline-block;
+  color: #fff;
+}
+
+.read-later {
+  display: inline-block;
+  height: 30px;
+  width: 121px;
+  background-color: #0E6EB3;
+}
+
+.read-later > a {
+  display: inline-block;
+  color: #fff;
+}
+
+.share-post {
+  display: inline-block;
+  height: 30px;
+  width: 121px;
+  background-color: #0E6EB3;
+}
+
+.share-post > a {
+  display: inline-block;
+  color: #fff;
+  /*margin: 3px 9px;*/
+}
+
+
+
 
 
 /********************************************
@@ -498,7 +561,7 @@ ADD PIC
 
 
 /********************************************
-LEFT CONTENT TEXT
+RIGHT SIDEBAR CONTENT
 ********************************************/
 
 
