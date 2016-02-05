@@ -40,9 +40,9 @@ li {
   display: inline-block;
 }
 
-p {
+/*p {
   margin: 0;
-}
+}*/
 
 
 /********************************************
@@ -236,11 +236,14 @@ BODY HEADING
 }
 
 #left-links {
-  display: inline-block;
+  display: inline;
+  position: relative;
+  bottom: 5px;
   font-family: "Open Sans";
   text-transform: capitalize;
+  text-decoration: underline;
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 #left-links p {
@@ -268,7 +271,7 @@ LEFT BODY
 ********************************************/
 
 #left-body {
-  margin-top: 35px;
+  margin-top: 1px;
   font-family: "Open Sans";
   line-height: 26px;
 }
@@ -285,10 +288,15 @@ LEFT BODY
 
 .left-body3 {
   color: #5D686F;
+  margin-top: 21px;
+  letter-spacing: -.5px;
 }
 
 .left-body4 {
   color: #5D686F;
+  margin-top: 26px;
+  letter-spacing: -.5px;
+
 }
 
 /********************************************
@@ -296,9 +304,22 @@ LEFT BREAK
 ********************************************/
 
 
+
+#break-border {
+  height: 58px;
+  border-left: 2px solid #9CAFBD;
+  margin-left: 6px;
+}
+
 .left-break {
+  display: block;
+  height: 58px;
   font-family: "Open Sans";
+  font-size: 27px;
   color: #026BB5;
+  text-transform: uppercase;
+  padding-left: 17px;
+  padding-top: 13px;
 }
 
 
