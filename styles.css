@@ -11,7 +11,7 @@ MAIN ELEMENTS
 body {
   color: #fff;
   height: 2104px;
-  width: 1299px;
+  width: 1300px;
   margin: 0;
   padding: 0;
 }
@@ -199,7 +199,7 @@ BODY ELEMENTS
 main {
   height: 1007px;
   width: 1300px;
-  border-bottom: 2px solid #E1E7EA;
+  border-bottom: 1px solid #E1E7EA;
 }
 
 
@@ -248,6 +248,13 @@ BODY HEADING
   font-size: 14px;
 }
 
+#left-links img {
+  height: 22px;
+  width: 22px;
+  border: 1px solid transparent transparent transparent;
+  border-radius: 50%;
+}
+
 #left-links p {
   color: #9DAFBC;
   width: 16px;
@@ -255,6 +262,14 @@ BODY HEADING
   text-transform: lowercase;
   display: inline-block;
 }
+
+/*.heading-link::before {
+  content: url(images/prof_pic.jpg);
+  height: 22px;
+  width: 22px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}*/
 
 .heading-link {
   color: #026BB5;
@@ -334,22 +349,37 @@ LEFT FOOTER ELEMENTS
 
 
 .body-footer {
-  display: inline;
+  display: inline-block;
 }
 
 .body-footer a {
   font-family: "Open Sans";
+  padding-top: 2px;
+}
+
+.fa-icon {
+  display: inline-block;
+  position: relative;
+  bottom: 5px;
+  left: 4px;
+  width: 33px;
+  height: 30px;
+  background-color: #073551;
 }
 
 i {
-
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  left: 9px;
 }
 
 .comments {
   display: inline-block;
+  position: relative;
   height: 30px;
   width: 121px;
-  background-color: #0E6EB3;
+  background-color: #A3B2BF;
 }
 
 .comments > a {
@@ -359,9 +389,10 @@ i {
 
 .read-later {
   display: inline-block;
+  position: relative;
   height: 30px;
   width: 121px;
-  background-color: #0E6EB3;
+  background-color: #A3B2BF;
 }
 
 .read-later > a {
@@ -371,6 +402,7 @@ i {
 
 .share-post {
   display: inline-block;
+  position: relative;
   height: 30px;
   width: 121px;
   background-color: #0E6EB3;
@@ -426,7 +458,7 @@ HEADSHOT
 
 .photo > img {
   border: 1px solid #ccc;
-  border-radius: 50px;
+  border-radius: 50%;
   width: 84px;
   height: 84px;
   margin-top: 83px;
@@ -584,5 +616,154 @@ RIGHT SIDEBAR CONTENT
   display: inline-block;
   position: relative;
   bottom: 25px;
+
+}
+
+/********************************************
+MOST VISITED SECTION
+********************************************/
+
+
+
+#most-visited {
+  display: inline-block;
+  width: 1300px;
+  /*width: 1311px;*/
+  height: 476px;
+
+}
+
+.most-head {
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 61px;
+  text-transform: uppercase;
+  margin: 25px 340px;
+  color: #0D3651;
+}
+
+#most-img {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+}
+
+/*#most-visited img {
+  width: 325px;
+  height: 330px;
+  padding:0;
+  margin:0;
+}*/
+
+.most1 {
+  float: left;
+  /*display: inline-block;*/
+  /*position: relative;*/
+  /*width: 25%;*/
+  height: 330px;
+  background: url(images/slater.jpg) no-repeat;
+  background-size: cover;
+  width: 325px;
+  /*height: 330;*/
+
+}
+
+.most1::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.most2 {
+  float: left;
+  /*right: 4px;*/
+  /*width: 25%;*/
+  height: 330px;
+  background: url(images/beer-tasting.jpg) no-repeat;
+  background-size: cover;
+  width: 325px;
+  /*height: 330;*/
+
+}
+
+.most4 {
+  float: right;
+  /*display: inline-block;
+  position: relative;*/
+  /*left: 316px;*/
+  /*width: 25%;*/
+  height: 330px;
+  background: url(images/bar.jpg) no-repeat;
+  background-size: cover;
+  width: 325px;
+  /*height: 330;*/
+
+}
+
+.most3 {
+  float: left;
+  /*display: inline-block;*/
+  /*position: relative;*/
+  /*right: 4px;*/
+  /*width: 25%;*/
+  height: 330px;
+  background: url(images/zach.jpg) no-repeat;
+  background-size: cover;
+  width: 325px;
+  /*height: 330;*/
+
+}
+
+
+
+/********************************************
+PAGE FOOTER
+********************************************/
+
+footer {
+  width: 1300px;
+  height: 97px;
+  background-color: #073551;
+}
+
+.footer-shit {
+  display: inline-block;
+  margin-left: 153px;
+}
+
+.footer-shit img {
+  display: inline-block;
+  position: relative;
+  top: 12px;
+}
+
+.footer-txt {
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+}
+
+.copy-wright {
+  display: inline-block;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #A3B2BF;
+  text-transform: capitalize;
+}
+
+.footer-nav {
+  display: inline-block;
+  margin-left: 252px;
+  /*float: right;*/
+}
+
+.footer-nav a {
+  font-family: "Open Sans";
+  font-size: 13.5px;
+  color: #A3B2BF;
+  text-transform: capitalize;
+  border-right: 1px solid #5D686F;
+  padding-right: 5px;
+  padding-left: 4px;
 
 }
