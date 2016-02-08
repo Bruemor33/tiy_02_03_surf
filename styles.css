@@ -245,22 +245,41 @@ BODY HEADING
   text-transform: capitalize;
   text-decoration: underline;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
+
 #left-links img {
+  float: left;
+  display: inline-block;
   height: 22px;
   width: 22px;
-  border: 1px solid transparent transparent transparent;
+  border: 1px solid transparent;
   border-radius: 50%;
+  position: relative;
+  top: 11px;
+  left: 3px;
 }
+
+.overlay-links img {
+  /*display: inline-block;*/
+  content: "";
+  height: 21px;
+  width: 21px;
+  background-color: rgba(24, 116, 205, 0.75);
+  position: relative;
+}
+
+
 
 #left-links p {
   color: #9DAFBC;
   width: 16px;
-  margin-left: 15px;
+  margin-left: 19px;
   text-transform: lowercase;
   display: inline-block;
+  position: relative;
+  top: 3px;
 }
 
 /*.heading-link::before {
@@ -274,12 +293,17 @@ BODY HEADING
 .heading-link {
   color: #026BB5;
   display: inline-block;
+  position: relative;
+  top: 2px;
+  left: 10px;
 }
 
 .date-link {
   color: #9DAFBC;
   display: inline-block;
   text-decoration: underline;
+  position: relative;
+  top: 3px;
 }
 
 
@@ -291,6 +315,9 @@ LEFT BODY
   margin-top: 1px;
   font-family: "Open Sans";
   line-height: 26px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
 }
 
 .left-body1 {
@@ -357,10 +384,10 @@ LEFT FOOTER ELEMENTS
   padding-top: 2px;
 }
 
-.fa-icon {
+.fa-icon-c {
   display: inline-block;
   position: relative;
-  bottom: 5px;
+  top: 3px;
   left: 4px;
   width: 33px;
   height: 30px;
@@ -377,32 +404,68 @@ i {
 .comments {
   display: inline-block;
   position: relative;
+  top: 5px;
+  right: 1px;
   height: 30px;
-  width: 121px;
+  width: 125px;
   background-color: #A3B2BF;
 }
 
 .comments > a {
   display: inline-block;
+  position: relative;
+  top: 4px;
+  left: 13px;
+  text-transform: capitalize;
+  font-size: 13px;
   color: #fff;
+}
+
+.fa-icon-u {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  left: 5px;
+  width: 33px;
+  height: 30px;
+  background-color: #073551;
 }
 
 .read-later {
   display: inline-block;
   position: relative;
+  top: 5px;
+  left: 1px;
   height: 30px;
-  width: 121px;
+  width: 95px;
   background-color: #A3B2BF;
 }
 
 .read-later > a {
   display: inline-block;
+  position: relative;
+  top: 4px;
+  left: 14px;
+  text-transform: capitalize;
+  font-size: 13px;
   color: #fff;
+}
+
+.fa-icon-s {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  left: 7px;
+  width: 33px;
+  height: 30px;
+  background-color: #073551;
 }
 
 .share-post {
   display: inline-block;
   position: relative;
+  top: 5px;
+  left: 3px;
   height: 30px;
   width: 121px;
   background-color: #0E6EB3;
@@ -410,6 +473,11 @@ i {
 
 .share-post > a {
   display: inline-block;
+  position: relative;
+  top: 4px;
+  left: 12px;
+  text-transform: capitalize;
+  font-size: 13px;
   color: #fff;
   /*margin: 3px 9px;*/
 }
@@ -630,13 +698,13 @@ MOST VISITED SECTION
   width: 1300px;
   /*width: 1311px;*/
   height: 476px;
-
 }
 
 .most-head {
   text-align: center;
   font-family: "Oswald";
   font-size: 61px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   margin: 25px 340px;
   color: #0D3651;
@@ -646,6 +714,15 @@ MOST VISITED SECTION
   display: inline-block;
   position: relative;
   top: 5px;
+
+}
+
+#most-img::before {
+  content: "";
+  display: inline;
+  position: absolute;
+  background-color: rgba(24, 116, 205, 0.75);
+
 }
 
 /*#most-visited img {
@@ -654,14 +731,23 @@ MOST VISITED SECTION
   padding:0;
   margin:0;
 }*/
+/*.most1::before {
+  content: "";
+  color: rgba(24, 116, 205, 0.75);
+  height: 330px;
+  width: 325px;
+  position: relative;
+  }*/
+
+
 
 .most1 {
   float: left;
   /*display: inline-block;*/
-  /*position: relative;*/
+  position: relative;
   /*width: 25%;*/
   height: 330px;
-  background: url(images/slater.jpg) no-repeat;
+  background: url(images/slater.jpg) center center;
   background-size: cover;
   width: 325px;
   /*height: 330;*/
@@ -674,16 +760,38 @@ MOST VISITED SECTION
   clear: both;
 }
 
+.hm1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 28px;
+  display: inline-block;
+  position: relative;
+  margin-top: 280px;
+  margin-left: 20px;
+}
+
 .most2 {
   float: left;
   /*right: 4px;*/
   /*width: 25%;*/
   height: 330px;
-  background: url(images/beer-tasting.jpg) no-repeat;
+  background: url(images/beer-tasting.jpg) center center;
   background-size: cover;
   width: 325px;
   /*height: 330;*/
 
+}
+
+.hm2 {
+  font-family: "Oswald";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 28px;
+  display: inline-block;
+  position: relative;
+  margin-top: 280px;
+  margin-left: 20px;
 }
 
 .most4 {
@@ -693,11 +801,23 @@ MOST VISITED SECTION
   /*left: 316px;*/
   /*width: 25%;*/
   height: 330px;
-  background: url(images/bar.jpg) no-repeat;
+  background: url(images/bar.jpg) center center;
   background-size: cover;
   width: 325px;
   /*height: 330;*/
 
+}
+
+.hm3 {
+  font-family: "Oswald";
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 37px;
+  font-size: 28px;
+  display: inline-block;
+  position: relative;
+  margin-top: 243px;
+  margin-left: 20px;
 }
 
 .most3 {
@@ -707,11 +827,22 @@ MOST VISITED SECTION
   /*right: 4px;*/
   /*width: 25%;*/
   height: 330px;
-  background: url(images/zach.jpg) no-repeat;
+  background: url(images/zach.jpg) center center;
   background-size: cover;
   width: 325px;
   /*height: 330;*/
 
+}
+
+.hm4 {
+  font-family: "Oswald";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 28px;
+  display: inline-block;
+  position: relative;
+  margin-top: 280px;
+  margin-left: 20px;
 }
 
 
@@ -767,3 +898,7 @@ footer {
   padding-left: 4px;
 
 }
+
+/*.footer-nav a:last-child{
+  border-right: 0;
+}*/
